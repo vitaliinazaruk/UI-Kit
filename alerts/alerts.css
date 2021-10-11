@@ -1,0 +1,82 @@
+body {
+    background-color: #f9f9f9;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px;
+}
+
+
+.alert {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.alert:last-child {
+    margin-bottom: 100px;
+}
+
+
+.alert__text {
+    margin: 0 auto 0 15px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.alert__icon {
+    font-size: 24px;
+}
+
+.alert--success {
+    background-color: var(--green);
+}
+
+.alert--info {
+    background-color: var(--blue);
+}
+
+.alert--warning {
+    background-color: var(--yellow);
+}
+
+.alert--error {
+    background-color: var(--red);
+}
+
+.alert--outlined {
+    border: 1px solid currentColor;
+	background-color: #ffffff;
+}
+
+.alert--outlined.alert--success {
+    color: var(--green);
+}
+
+.alert--outlined.alert--info {
+    color: var(--blue);
+}
+
+.alert--outlined.alert--warning {
+    color: var(--yellow);
+}
+
+.alert--outlined.alert--error {
+    color: var(--red);
+}
+
+.alert .button--transparent i {
+    color: #ffffff;
+}
+
+.alert--outlined .button--transparent i {
+    color: #c3c3c3;
+}

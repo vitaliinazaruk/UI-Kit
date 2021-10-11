@@ -1,0 +1,16 @@
+:root {
+	--green: #0cb95a;
+	--blue: #456dff;
+	--red: #ef3434;
+	--yellow: #faaa39;
+	--gray: #2e384d;
+
+	--button-xs-height: 30px;
+	--button-s-height: 40px;
+	--button-m-height: 48px;
+    --button-l-height: 64px;
+    --button-side-padding: 20px;
+    
+    --sidebar-open-width: 280px;
+
+  }

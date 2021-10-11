@@ -1,0 +1,181 @@
+
+body {
+    background-color: #f9f9f9;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+
+.buttons-size-block {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 70px;
+}
+
+.buttons-row {
+	display: flex;
+}
+
+.buttons .button {
+	margin: 10px 7px;
+}
+
+.button {
+    color: #ffffff;
+    font-weight: 500;
+    background-color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.button--blue {
+    background-color: var(--blue);
+}
+
+.button--green {
+    background-color: var(--green);
+}
+
+.button--red {
+    background-color: var(--red);
+}
+
+.button--dark {
+    background-color: var(--gray);
+}
+
+.button--yellow {
+    background-color: var(--yellow);
+}
+
+.button--gray {
+    background-color: #ebe9e9;
+    color: #2e384d;
+}
+
+.button--xs {
+	min-width: 80px;
+	height: 100%;
+	max-height: var(--button-xs-height);
+	padding: 5px var(--button-side-padding);
+	font-size: 16px;
+}
+
+.button--s {
+	min-width: 150px;
+	height: 100%;
+	max-height: var(--button-s-height);
+	padding: 10px var(--button-side-padding);
+	font-size: 18px;
+}
+
+.button--m {
+	min-width: 195px;
+	min-height: var(--button-m-height);
+	padding: 10px var(--button-side-padding);
+    font-size: 20px;
+}
+
+
+
+
+.button--l {
+	min-width: 292px;
+	min-height: var(--button-l-height);
+	padding: 10px var(--button-side-padding);
+    font-size: 30px;
+}
+
+
+.button--loading {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button--s.button--loading {
+	font-size: 24px;
+}
+
+.button--m.button--loading {
+	font-size: 30px;
+}
+
+.button--l.button--loading {
+	font-size: 35px;
+}
+
+.button--loading > i {
+	animation: spin  2s infinite ease-in-out;
+}
+
+.button--outlined {
+	border: 2px solid currentColor;
+	background-color: #ffffff;
+}
+
+.button--outlined.button--blue {
+	color: var(--blue);
+}
+
+.button--outlined.button--green {
+	color: var(--green);
+}
+
+.button--outlined.button--red {
+	color: var(--red);
+}
+
+.button--outlined.button--dark {
+	color: var(--dark);
+}
+
+.button--outlined.button--yellow {
+	color: var(--yellow);
+}
+
+.button--outlined.button--gray {
+	color: var(--gray);
+}
+
+
+.button--icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 0;
+	border-radius: 50%;
+	height: 100%;
+	width: 100%;
+}
+
+.button--transparent {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+	outline: none;
+}
+
+.button--icon.button--s {
+	max-width: var(--button-s-height);
+	max-height: var(--button-s-height);
+}
+
+.button--icon.button--m {
+	max-width: var(--button-m-height);
+	max-height: var(--button-m-height);
+}
+
+.button--icon.button--l {
+	max-width: var(--button-l-height);
+	max-height: var(--button-l-height);
+}
+
+
+@keyframes spin { 
+	from {transfrom: rotate(0deg);}
+	to {transform: rotate(360deg);}
+ }

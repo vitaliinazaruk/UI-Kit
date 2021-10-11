@@ -1,0 +1,93 @@
+
+.info-tab {
+    width: 100%;
+    max-width: 950px;
+    padding: 35px 25px;
+    background-color: #d5cece;
+    margin-bottom: 100px;
+}
+
+.info-tab:last-child {
+    margin-bottom: 0;
+}
+
+.info-tab__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.info-tab__item:first-child, .info-tab__item:last-child {
+    padding: 0;
+}
+
+
+.info-tab__item:last-child .checkbox__label {
+    font-size: 18px;
+}
+
+
+.info-tab__title {
+    color: #4e4c4c;
+}
+
+.info-tab__title > h6 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+.info-tab__checkbox {
+    display: flex;
+    color: #4e4c4c;
+}
+
+.info-tab__checkbox > .checkbox {
+    padding: 0 20px;
+}
+
+.info-tab__checkbox > .checkbox:first-child, .info-tab__checkbox > .checkbox:last-child {
+    padding: 0;
+}
+
+.info-tab__description {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.info-tab__text {
+    padding: 8px 0;
+    font-weight: 300;
+    color: #4e4c4c;
+}
+
+.info-tab__buttons {
+    display: flex;
+}
+
+.info-tab__buttons > button {
+    margin: 0 10px;
+}
+
+.info-tab__buttons > button:first-child, .info-tab__buttons > button:last-child {
+    margin: 0;
+}
+
+.info-tab__assign {
+    font-size: 18px;
+}
+
+.info-tab__assign > .info-tab__title {
+    margin-bottom: 10px;
+}
+
+.info-tab__assign > .info-tab__text {
+    margin-right: 20px;
+}
+
+.info-tab__assign > .info-tab__text:first-child {
+    margin-right: 0;
+}

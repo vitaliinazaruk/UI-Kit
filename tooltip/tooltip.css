@@ -1,0 +1,127 @@
+.main-block {
+    margin: 200px 0 0 100px;
+}
+
+.tooltips {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip__icon{
+    font-size: 28px;
+}
+
+.tooltip__text {
+    visibility: hidden;
+    width: 150px;
+    height: 90px;
+    /*bottom: 90%;*/
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+  }
+
+
+.tooltip__icon:hover + .tooltip__text {
+    visibility: visible;
+  }
+
+.tooltip .tooltip__text:after {
+    content: " ";
+    position: absolute;
+    /*top: 100%;*/
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
+    border-width: 8px;
+    border-style: solid;    /* трикутник */
+}
+
+.tooltip--top .tooltip__text {
+    bottom: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tooltip--top .tooltip__text:after {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tooltip--bottom .tooltip__text {
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tooltip--bottom .tooltip__text:after {
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+}
+
+.tooltip--right .tooltip__text {
+    top: 0;
+    left: 150%;
+    transform: translateY(-50%);
+}
+
+.tooltip--right .tooltip__text:after {
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%) rotate(90deg);
+}
+
+
+.tooltip--info {
+    color: var(--blue);
+}
+
+.tooltip--info  .tooltip__text {
+    background-color: var(--blue);
+}
+
+.tooltip--info .tooltip__text::after {
+    border-color: var(--blue) transparent transparent transparent;
+  /* колір трикутника */
+}
+
+.tooltip--dark {
+    color: var(--gray);
+}
+
+.tooltip--dark  .tooltip__text {
+    background-color: var(--gray);
+}
+
+.tooltip--dark  .tooltip__text::after {
+    border-color: var(--gray) transparent transparent transparent;
+}
+
+.tooltip--warning {
+    color: var(--yellow);
+}
+
+.tooltip--warning  .tooltip__text {
+    background-color: var(--yellow);
+}
+
+.tooltip--warning  .tooltip__text::after {
+    border-color: var(--yellow) transparent transparent transparent;
+}
